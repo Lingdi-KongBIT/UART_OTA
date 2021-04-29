@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"ota\startup_stm32f103xe.o"
+"ota\main.o"
+"ota\gpio.o"
+"ota\dma.o"
+"ota\usart.o"
+"ota\stm32f1xx_it.o"
+"ota\stm32f1xx_hal_msp.o"
+"ota\ymodem.o"
+"ota\stm32f1xx_hal_gpio_ex.o"
+"ota\stm32f1xx_hal_tim.o"
+"ota\stm32f1xx_hal_tim_ex.o"
+"ota\stm32f1xx_hal_uart.o"
+"ota\stm32f1xx_hal.o"
+"ota\stm32f1xx_hal_rcc.o"
+"ota\stm32f1xx_hal_rcc_ex.o"
+"ota\stm32f1xx_hal_gpio.o"
+"ota\stm32f1xx_hal_dma.o"
+"ota\stm32f1xx_hal_cortex.o"
+"ota\stm32f1xx_hal_pwr.o"
+"ota\stm32f1xx_hal_flash.o"
+"ota\stm32f1xx_hal_flash_ex.o"
+"ota\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "OTA\OTA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OTA.map" -o OTA\OTA.axf

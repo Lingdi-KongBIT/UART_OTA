@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"ledapp\startup_stm32f103xe.o"
+"ledapp\main.o"
+"ledapp\gpio.o"
+"ledapp\stm32f1xx_it.o"
+"ledapp\stm32f1xx_hal_msp.o"
+"ledapp\stm32f1xx_hal_gpio_ex.o"
+"ledapp\stm32f1xx_hal_tim.o"
+"ledapp\stm32f1xx_hal_tim_ex.o"
+"ledapp\stm32f1xx_hal.o"
+"ledapp\stm32f1xx_hal_rcc.o"
+"ledapp\stm32f1xx_hal_rcc_ex.o"
+"ledapp\stm32f1xx_hal_gpio.o"
+"ledapp\stm32f1xx_hal_dma.o"
+"ledapp\stm32f1xx_hal_cortex.o"
+"ledapp\stm32f1xx_hal_pwr.o"
+"ledapp\stm32f1xx_hal_flash.o"
+"ledapp\stm32f1xx_hal_flash_ex.o"
+"ledapp\stm32f1xx_hal_exti.o"
+"ledapp\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "ledApp\ledApp.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ledApp.map" -o ledApp\ledApp.axf
